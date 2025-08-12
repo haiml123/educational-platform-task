@@ -35,7 +35,6 @@ export class OpenAIProvider implements LLM, Embedder {
       service_tier: "priority",
       model,
       input: messages,
-      temperature,
       max_output_tokens: maxTokens,
       ...(schema && {
         text: {
